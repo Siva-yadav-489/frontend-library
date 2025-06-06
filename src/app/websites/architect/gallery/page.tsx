@@ -9,7 +9,7 @@ const inter = Inter({
 
 const GalleryPage = () => {
   return (
-    <div className={`${inter.className}`}>
+    <div className={`${inter.className} text-black`}>
       <Navbar />
       <Gallery />
       <Footer />

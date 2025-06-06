@@ -16,7 +16,7 @@ const Card = ({ title, desc, image, bgColor }: CardProps) => {
         <p className="text-[11px] tracking-tight text-[#828553] mb-4">
           {title}
         </p>
-        <h2 className="text-[28px] max-md:text-xl tracking-tighter leading-7 font-semibold font-sans">
+        <h2 className="text-[28px] text-black max-md:text-xl tracking-tighter leading-7 font-semibold font-sans">
           {desc}
         </h2>
       </section>

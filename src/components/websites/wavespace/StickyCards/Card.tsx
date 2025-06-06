@@ -39,40 +39,42 @@ const Card = ({
           </h2>
           <div className="flex">
             <div className="flex flex-col max-w-[350px]">
-              <p className="text-[17px] font-medium mb-7">{description}</p>
+              <p className="text-[17px] font-medium mb-7">
+                {description.replace(/"/g, "&quot;")}
+              </p>
               <Button
                 text={buttonText}
                 textSize="text-[14.5px] max-md:text-[14px]"
                 btnStyle={`${buttonStyle} py-3.5`}
                 hoverColor={hoverColor}
               >
-                buttonStyle === "bg-black text-white" ? (
-                <>
-                  <Image
-                    src={rightTopArrow}
-                    alt="rightTopArrow"
-                    className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
-                  />
-                  <Image
-                    src={rightTopArrow}
-                    alt="rightTopArrow"
-                    className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
-                  />
-                </>
+                {buttonStyle === "bg-black text-white" ? (
+                  <>
+                    <Image
+                      src={rightTopArrow}
+                      alt="rightTopArrow"
+                      className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
+                    />
+                    <Image
+                      src={rightTopArrow}
+                      alt="rightTopArrow"
+                      className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
+                    />
+                  </>
                 ) : (
-                <>
-                  <Image
-                    src={blackRightTopArrow}
-                    alt="blackRightTopArrow"
-                    className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
-                  />
-                  <Image
-                    src={blackRightTopArrow}
-                    alt="blackRightTopArrow"
-                    className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
-                  />
-                </>
-                )
+                  <>
+                    <Image
+                      src={blackRightTopArrow}
+                      alt="blackRightTopArrow"
+                      className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
+                    />
+                    <Image
+                      src={blackRightTopArrow}
+                      alt="blackRightTopArrow"
+                      className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
+                    />
+                  </>
+                )}
               </Button>
             </div>
             <ul className="ml-20 max-lg:ml-5 max-md:hidden">

@@ -16,7 +16,9 @@ const inter = Inter({
 
 const AboutPage = () => {
   return (
-    <div className={`${inter.className} bg-[#211f1a] tracking-tighter`}>
+    <div
+      className={`${inter.className} bg-[#211f1a] text-black tracking-tighter`}
+    >
       <Navbar />
       <Hero />
       <AboutUs />

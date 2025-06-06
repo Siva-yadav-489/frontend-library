@@ -194,21 +194,20 @@ const Navbar = () => {
               btnStyle="py-3.5 max-lg:hidden"
               text="Contact us"
               textSize="text-[15px] text-white"
-              children={
-                <>
-                  <Image
-                    src={rightTopArrow}
-                    alt="rightTopArrow"
-                    className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
-                  />
-                  <Image
-                    src={rightTopArrow}
-                    alt="rightTopArrow"
-                    className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
-                  />
-                </>
-              }
-            />
+            >
+              <>
+                <Image
+                  src={rightTopArrow}
+                  alt="rightTopArrow"
+                  className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
+                />
+                <Image
+                  src={rightTopArrow}
+                  alt="rightTopArrow"
+                  className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
+                />
+              </>
+            </Button>
           </div>
           <a
             href="#"

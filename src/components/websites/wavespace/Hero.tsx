@@ -6,11 +6,9 @@ import rightTopArrow from "/public/websites/wavespace/rightTopArrow.webp";
 import person1 from "/public/websites/wavespace/hero/person1.webp";
 import person2 from "/public/websites/wavespace/hero/person2.webp";
 import person3 from "/public/websites/wavespace/hero/person3.webp";
-import linkedinIcon from "/public/websites/wavespace/hero/linkedinIcon.webp";
 import clutchLogo from "/public/websites/wavespace/hero/clutchLogo.svg";
 import { Roboto } from "next/font/google";
 import * as motion from "motion/react-client";
-import { StaticImageData } from "next/image";
 import Popover from "./Popover";
 
 const roboto = Roboto({
@@ -151,21 +149,20 @@ const Hero = () => {
             hoverColor="bg-[#3f2fee]"
             text="Book a strategy call"
             textSize="text-[16px] text-white"
-            children={
-              <>
-                <Image
-                  src={rightTopArrow}
-                  alt="rightTopArrow"
-                  className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
-                />
-                <Image
-                  src={rightTopArrow}
-                  alt="rightTopArrow"
-                  className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
-                />
-              </>
-            }
-          />
+          >
+            <>
+              <Image
+                src={rightTopArrow}
+                alt="rightTopArrow"
+                className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
+              />
+              <Image
+                src={rightTopArrow}
+                alt="rightTopArrow"
+                className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
+              />
+            </>
+          </Button>
           <Button
             btnStyle="bg-white text-black py-4.5 outline outline-black"
             hoverColor="bg-[#ebfe5b]"
