@@ -4,9 +4,6 @@ import { motion, useSpring, useInView } from "motion/react";
 import { useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
-const RECOVERY_TARGET = 3;
-const PERCENTAGE_TARGET = 88;
-
 const UnlockYourPotential = () => {
   const { scrollY } = useScroll();
   const zoom = useTransform(scrollY, [100, 1000], [2, 1]);

@@ -21,7 +21,7 @@ const JoinAtbottom = () => {
             <GlowButton adjustStyle="w-60 text-nowrap md:ml-4 mb-1.5 bg-[rgb(244,251,140)] hover:drop-shadow-[rgb(244,251,140)] drop-shadow-[#f4fb8c]/80 drop-shadow-2xl drop-shadow-xl/40 hover:drop-shadow-2xl/50" />
           </section>
           <span className="text-white text-[58px] sm:text-nowrap max-lg:text-5xl max-md:text-4xl max-md:leading-14 leading-[58px] tracking-tighter font-bold">
-            THAT'S JUST THE START.
+            THAT&apos;S JUST THE START.
           </span>
         </div>
         <p className="text-lg font-medium font-sans tracking-tight text-white">
