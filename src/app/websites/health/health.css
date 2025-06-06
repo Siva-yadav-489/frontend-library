@@ -1,0 +1,19 @@
+.font-jetbrains-mono {
+    font-family: var(--font-jetbrains-mono);
+}
+
+@layer utilities {
+
+    /* for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}

@@ -1,0 +1,11 @@
+.guminert-font {
+  font-family: var(--font-guminert);
+}
+
+select {
+  color: #7e7e81;
+}
+
+select option {
+  color: #333;
+}

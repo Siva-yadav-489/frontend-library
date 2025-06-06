@@ -1,0 +1,39 @@
+.dripify-content-font {
+  font-family: var(--font-thicccboi);
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.scroll-left {
+  animation: scrollLeft 20s linear infinite;
+}
+
+/* Pause animation on hover */
+.scroll-left:hover {
+  animation-play-state: paused;
+}
+
+.scroll-right {
+  animation: scrollRight 20s linear infinite;
+}
+
+/* Pause animation on hover */
+.scroll-right:hover {
+  animation-play-state: paused;
+}

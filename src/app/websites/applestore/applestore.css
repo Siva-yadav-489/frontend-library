@@ -1,0 +1,16 @@
+.apple-store-font {
+  font-family: var(--font-sf-pro-Display);
+}
+
+/* hiding scrollbar for applestore horizontal scroll */
+@layer utilities {
+  /* for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
