@@ -152,37 +152,36 @@ const Footer = () => {
               hoverColor="bg-white"
               textSize="text-[15.5px] max-md:text-xs"
               arrowAnimation={false}
-              children={
-                <div className="relative bg-black box-content p-3 rounded-full w-5 h-5 max-md:w-3 max-md:h-3 overflow-hidden">
-                  <div className="relative flex justify-center items-center overflow-hidden w-full h-full">
-                    <motion.div
-                      initial={{ y: -18 }}
-                      variants={{
-                        hover: {
-                          y: 3,
-                          transition: {
-                            duration: 0.3,
-                            ease: "linear",
-                          },
+            >
+              <div className="relative bg-black box-content p-3 rounded-full w-5 h-5 max-md:w-3 max-md:h-3 overflow-hidden">
+                <div className="relative flex justify-center items-center overflow-hidden w-full h-full">
+                  <motion.div
+                    initial={{ y: -18 }}
+                    variants={{
+                      hover: {
+                        y: 3,
+                        transition: {
+                          duration: 0.3,
+                          ease: "linear",
                         },
-                      }}
-                      className="flex flex-col space-y-1 w-4 h-4"
-                    >
-                      <Image
-                        src={yellowDownArrow}
-                        alt="yellowDownArrow"
-                        className="w-4 box-content shrink-0"
-                      />
-                      <Image
-                        src={yellowDownArrow}
-                        alt="yellowDownArrow"
-                        className="w-4 box-content shrink-0"
-                      />
-                    </motion.div>
-                  </div>
+                      },
+                    }}
+                    className="flex flex-col space-y-1 w-4 h-4"
+                  >
+                    <Image
+                      src={yellowDownArrow}
+                      alt="yellowDownArrow"
+                      className="w-4 box-content shrink-0"
+                    />
+                    <Image
+                      src={yellowDownArrow}
+                      alt="yellowDownArrow"
+                      className="w-4 box-content shrink-0"
+                    />
+                  </motion.div>
                 </div>
-              }
-            />
+              </div>
+            </Button>
             {/* </motion.div> */}
           </section>
           <div className="flex justify-between items-start flex-wrap gap-y-6 max-lg:w-full max-lg:mt-8">
@@ -216,7 +215,7 @@ const Footer = () => {
           <div className="flex items-center justify-between">
             <section>
               <p className="text-lg max-lg:text-sm max-sm:text-[11px] font-semibold text-white">
-                Let's work together
+                Let&apos;s work together
               </p>
               <h3 className="text-3xl max-lg:text-xl max-sm:text-base max-sm:font-semibold font-bold text-[#ebfe5b]">
                 Call wavespace

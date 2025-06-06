@@ -98,8 +98,8 @@ const BeyondGenericTraining = () => {
             YOUR PERSONAL PATH TO PEAK OPTIMZIATION
           </h1>
           <p className="text-lg font-medium tracking-tight text-white">
-            Whether you're chasing your first sub-3 marathon or aiming to
-            shatter power records, we've built the ultimate performance
+            Whether you&apos;re chasing your first sub-3 marathon or aiming to
+            shatter power records, we&apos;ve built the ultimate performance
             optimization system for endurance athletes.
           </p>
         </section>

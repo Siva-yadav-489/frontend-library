@@ -45,21 +45,20 @@ const ContactUs = () => {
             btnStyle="py-3.5 max-sm:py-3"
             text="Book a call"
             textSize="text-[15px] max-sm:text-sm text-white"
-            children={
-              <>
-                <Image
-                  src={rightTopArrow}
-                  alt="rightTopArrow"
-                  className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
-                />
-                <Image
-                  src={rightTopArrow}
-                  alt="rightTopArrow"
-                  className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
-                />
-              </>
-            }
-          />
+          >
+            <>
+              <Image
+                src={rightTopArrow}
+                alt="rightTopArrow"
+                className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
+              />
+              <Image
+                src={rightTopArrow}
+                alt="rightTopArrow"
+                className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
+              />
+            </>
+          </Button>
         </div>
         <div className="flex max-lg:flex-wrap justify-between mt-24 max-md:mt-10 max-lg:gap-y-5">
           {branches.map((branch, index) => (

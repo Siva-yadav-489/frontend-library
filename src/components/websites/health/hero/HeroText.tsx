@@ -8,7 +8,7 @@ const HeroText = () => {
           REDEFINING HUMAN <br /> PERFORMANCE
         </p>
         <p className="text-lg font-medium tracking-tight mt-5  max-sm:px-5">
-          The world's most advanced performance optimization lab{" "}
+          The world&apos;s most advanced performance optimization lab{" "}
           <br className="max-sm:hidden" />
           combining elite endurance training, longevity science,{" "}
           <br className="max-sm:hidden" />

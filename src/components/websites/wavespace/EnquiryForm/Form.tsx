@@ -1,4 +1,3 @@
-import Button from "../Button";
 import Image from "next/image";
 import ceo from "/public/websites/wavespace/enquiryForm/ceo.webp";
 import calendarIcon from "/public/websites/wavespace/enquiryForm/calendarIcon.webp";

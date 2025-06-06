@@ -71,21 +71,20 @@ const DeliveryTime = () => {
               hoverColor="bg-white"
               text="Book a call"
               textSize="text-[15.5px] max-md:text-[14px]"
-              children={
-                <>
-                  <Image
-                    src={blackRightTopArrow}
-                    alt="blackRightTopArrow"
-                    className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
-                  />
-                  <Image
-                    src={blackRightTopArrow}
-                    alt="blackRightTopArrow"
-                    className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
-                  />
-                </>
-              }
-            />
+            >
+              <>
+                <Image
+                  src={blackRightTopArrow}
+                  alt="blackRightTopArrow"
+                  className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
+                />
+                <Image
+                  src={blackRightTopArrow}
+                  alt="blackRightTopArrow"
+                  className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
+                />
+              </>
+            </Button>
           </section>
         </div>
         <AnimatedHeading

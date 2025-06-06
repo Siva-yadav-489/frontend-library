@@ -16,13 +16,13 @@ const Inspiration = () => {
           className="mx-auto rounded-md w-80"
         />
         <p className="text-xl max-md:text-lg max-sm:w-[80%] max-sm:mx-auto px-3 text-[#fffbf5] py-5 rounded-lg backdrop-blur-sm -mt-5 font-semibold max-sm:font-medium text-center">
-          "We came in with a Pinterest board full of{" "}
+          &quot;We came in with a Pinterest board full of
           <br className="max-sm:hidden" /> ideas and left with the home of our
           dreams! <br className="max-sm:hidden" />
           The team made everything so easy, <br className="max-sm:hidden" />
-          listening to every little detail and turning our{" "}
+          listening to every little detail and turning our
           <br className="max-sm:hidden" />
-          scattered thoughts into something magical."x`
+          scattered thoughts into something magical.&quot;
         </p>
         <div className="flex flex-wrap max-sm:w-[80%] max-sm:mx-auto items-center space-x-1 justify-center my-11">
           <section className="bg-[#fffbf5] flex justify-between items-center rounded-md p-1">

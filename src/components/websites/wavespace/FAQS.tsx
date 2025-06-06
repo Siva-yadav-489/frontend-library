@@ -240,9 +240,9 @@ const FAQS = () => {
             <div className="bg-[#1b1b1b] p-7 max-w-[305px]">
               <Image src={ceoImage} alt="ceoImage" className="w-14 mb-3" />
               <p className="text-white text-[16.5px] font-medium mb-5">
-                Hi, I'm Shahid, the CEO and Founder of Wavespace. Don't hesitate
-                to reach out to me anytime – I'm here to answer all your
-                questions!
+                Hi, I&apos;m Shahid, the CEO and Founder of Wavespace.
+                Don&apos;t hesitate to reach out to me anytime – I&apos;m here
+                to answer all your questions!
               </p>
               <Button
                 btnStyle="bg-[#ebfe5b] py-2"
@@ -250,37 +250,36 @@ const FAQS = () => {
                 textSize="text-base text-black"
                 hoverColor="bg-white"
                 arrowAnimation={false}
-                children={
-                  <div className="relative box-content p-2 rounded-full w-6 h-6 max-md:w-3 max-md:h-3 overflow-hidden">
-                    <div className="relative flex justify-center items-center overflow-hidden w-full h-full">
-                      <motion.div
-                        initial={{ y: 0 }}
-                        variants={{
-                          hover: {
-                            y: -28,
-                            transition: {
-                              duration: 0.3,
-                              ease: "linear",
-                            },
+              >
+                <div className="relative box-content p-2 rounded-full w-6 h-6 max-md:w-3 max-md:h-3 overflow-hidden">
+                  <div className="relative flex justify-center items-center overflow-hidden w-full h-full">
+                    <motion.div
+                      initial={{ y: 0 }}
+                      variants={{
+                        hover: {
+                          y: -28,
+                          transition: {
+                            duration: 0.3,
+                            ease: "linear",
                           },
-                        }}
-                        className="flex flex-col space-y-1 w-6 h-6"
-                      >
-                        <Image
-                          src={whatsAppIcon}
-                          alt="whatsAppIcon"
-                          className="w-6 box-content shrink-0"
-                        />
-                        <Image
-                          src={whatsAppIcon}
-                          alt="whatsAppIcon"
-                          className="w-6 box-content shrink-0"
-                        />
-                      </motion.div>
-                    </div>
+                        },
+                      }}
+                      className="flex flex-col space-y-1 w-6 h-6"
+                    >
+                      <Image
+                        src={whatsAppIcon}
+                        alt="whatsAppIcon"
+                        className="w-6 box-content shrink-0"
+                      />
+                      <Image
+                        src={whatsAppIcon}
+                        alt="whatsAppIcon"
+                        className="w-6 box-content shrink-0"
+                      />
+                    </motion.div>
                   </div>
-                }
-              />
+                </div>
+              </Button>
             </div>
           </section>
         </div>

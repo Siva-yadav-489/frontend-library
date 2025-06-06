@@ -4,6 +4,9 @@ import { motion, useSpring, useInView } from "motion/react";
 import { useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
+const RECOVERY_TARGET = 3;
+const PERCENTAGE_TARGET = 88;
+
 const UnlockYourPotential = () => {
   const { scrollY } = useScroll();
   const zoom = useTransform(scrollY, [100, 1000], [2, 1]);
@@ -14,11 +17,17 @@ const UnlockYourPotential = () => {
   const recovery = useSpring(0, {
     duration: 1000,
   });
-  const percentage = useSpring(0, { bounce: 0, duration: 2000 });
+
+  const percentage = useSpring(0, {
+    duration: 2000,
+    stiffness: 50,
+    damping: 15,
+  });
 
   recovery.on("change", (value) => {
     setRecoveryValue(Math.round(value));
   });
+
   percentage.on("change", (value) => {
     setpercentageValue(Math.round(value));
   });
@@ -34,7 +43,7 @@ const UnlockYourPotential = () => {
       recovery.set(0);
       percentage.set(0);
     }
-  }, [isInView]);
+  }, [isInView, recovery, percentage]);
 
   const metrics = [
     "TRAIN SMARTER",
@@ -97,7 +106,7 @@ const UnlockYourPotential = () => {
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="text-[58px] max-lg:text-4xl lg:leading-[58px] tracking-tighter font-bold"
           >
-            <span className="text-[#c6c6c6]"> THAT'S WHY</span> <br />
+            <span className="text-[#c6c6c6]"> THAT&apos;S WHY</span> <br />
             OPTIMIZATION <br />
             MATTERS
           </motion.p>
