@@ -5,7 +5,8 @@ A modern, responsive component library built with Next.js to showcase reusable f
 ## 🚀 Tech Stack
 
 - **Framework**: [Next.js](https://nextjs.org) - React framework for production
-- **Styling**: Tailwind CSS for utility-first styling
+- **Language**: [TypeScript](https://www.typescriptlang.org) - Type-safe JavaScript
+- **Styling**: [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
 - **Animation**: [Framer Motion](https://motion.dev) - Production-ready motion library for React
 
 ## ✨ Features
