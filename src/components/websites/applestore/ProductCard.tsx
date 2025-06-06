@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type ProductCardProps = {
   link: string;
   text: string[];
@@ -7,7 +9,7 @@ type ProductCardProps = {
 const ProductCard = ({ link, text, colorOptions }: ProductCardProps) => {
   return (
     <div className="rounded-2xl flex flex-col justify-between font-SFregular leading-relaxed min-w-[20rem] bg-white h-[31rem] p-7 pt-14 shadow-xl hover:scale-[101%] hover:shadow-xl/15 transition ease-in">
-      <img
+      <Image
         src={link}
         alt="airpodsmax"
         height={230}
@@ -16,7 +18,7 @@ const ProductCard = ({ link, text, colorOptions }: ProductCardProps) => {
       />
       <ul className={` ${colorOptions} py-5`}>
         <li>
-          <img
+          <Image
             width="12"
             height="12"
             alt="Blue"
@@ -24,7 +26,7 @@ const ProductCard = ({ link, text, colorOptions }: ProductCardProps) => {
           />
         </li>
         <li>
-          <img
+          <Image
             width="12"
             height="12"
             alt="Purple"
@@ -32,7 +34,7 @@ const ProductCard = ({ link, text, colorOptions }: ProductCardProps) => {
           />
         </li>
         <li>
-          <img
+          <Image
             width="12"
             height="12"
             alt="Midnight"
@@ -40,7 +42,7 @@ const ProductCard = ({ link, text, colorOptions }: ProductCardProps) => {
           />
         </li>
         <li>
-          <img
+          <Image
             width="12"
             height="12"
             alt="Starlight"
@@ -48,7 +50,7 @@ const ProductCard = ({ link, text, colorOptions }: ProductCardProps) => {
           />
         </li>
         <li>
-          <img
+          <Image
             width="12"
             height="12"
             alt="Orange"

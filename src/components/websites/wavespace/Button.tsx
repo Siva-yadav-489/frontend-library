@@ -4,7 +4,6 @@ type ButtonProps = {
   btnStyle?: string;
   text?: string;
   textSize?: string;
-  children?: React.ReactNode;
   hoverColor?: string;
   arrowAnimation?: boolean;
 };
@@ -13,10 +12,10 @@ const Button = ({
   btnStyle,
   text = "Contact Us",
   textSize,
-  children,
   hoverColor = "bg-black",
   arrowAnimation = true,
-}: ButtonProps) => {
+  children,
+}: ButtonProps & { children?: React.ReactNode }) => {
   return (
     <motion.div className="relative" whileHover="hover">
       <motion.a
@@ -73,7 +72,7 @@ const Button = ({
             </motion.div>
           </div>
         ) : (
-          <div>{children}</div>
+          <>{children}</>
         )}
       </motion.a>
     </motion.div>

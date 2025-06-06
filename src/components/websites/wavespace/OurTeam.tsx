@@ -22,7 +22,6 @@ import image16 from "/public/websites/wavespace/ourTeam/image16.webp";
 import image17 from "/public/websites/wavespace/ourTeam/image17.webp";
 import image18 from "/public/websites/wavespace/ourTeam/image18.webp";
 import * as motion from "motion/react-client";
-import { useEffect, useRef, useState } from "react";
 
 const OurTeam = () => {
   const cardsInfo = [

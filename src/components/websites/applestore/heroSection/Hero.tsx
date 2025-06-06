@@ -1,3 +1,4 @@
+import Image from "next/image";
 import HeroProducts from "./HeroProducts";
 
 const Hero = () => {
@@ -11,7 +12,7 @@ const Hero = () => {
         </p>
         <div>
           <div className="flex items-center mb-2.5">
-            <img
+            <Image
               width="35"
               height="35"
               src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-chat-earth-day-specialist-icon-202504?wid=70&amp;hei=70&amp;fmt=jpeg&amp;qlt=90&amp;.v=1742997161932"

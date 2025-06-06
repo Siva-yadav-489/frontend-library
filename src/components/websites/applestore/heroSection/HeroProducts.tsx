@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const HeroProducts = () => {
   const images = [
     {
@@ -42,7 +44,7 @@ const HeroProducts = () => {
       {images.map((item, index) => {
         return (
           <div key={index} className="flex flex-col items-center px-3">
-            <img
+            <Image
               src={item.link}
               alt={item.name}
               width={400}

@@ -138,14 +138,13 @@ const Hero = () => {
           btnStyle="py-3 sm:hidden  mt-6"
           textSize="text-[14px] text-white"
           arrowAnimation={false}
-          children={
-            <Image
-              src={rightTopArrow}
-              alt="rightTopArrow"
-              className="w-2.5 relative"
-            />
-          }
-        />
+        >
+          <Image
+            src={rightTopArrow}
+            alt="rightTopArrow"
+            className="w-2.5 relative"
+          />
+        </Button>
         <div className="flex space-x-4 mt-14 max-lg:mt-8 max-sm:hidden">
           <Button
             btnStyle="bg-black py-4.5"

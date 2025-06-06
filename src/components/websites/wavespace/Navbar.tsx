@@ -21,7 +21,7 @@ const NavLink = ({
       whileHover="hover"
     >
       {name}
-      {children}
+      {children && <>{children}</>}
       <motion.span
         className="absolute bottom-0 left-0 w-0 h-[0.5px] bg-[#1b1b1b]"
         initial={{ width: 0 }}

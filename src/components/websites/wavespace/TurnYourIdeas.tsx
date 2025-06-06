@@ -67,21 +67,20 @@ const TurnYourIdeas = () => {
             btnStyle="py-3.5 max-md:py-3 max-md:mt-4"
             text="Start your project"
             textSize="text-[15px] max-md:text-[14px] text-white"
-            children={
-              <>
-                <Image
-                  src={rightTopArrow}
-                  alt="rightTopArrow"
-                  className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
-                />
-                <Image
-                  src={rightTopArrow}
-                  alt="rightTopArrow"
-                  className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
-                />
-              </>
-            }
-          />
+          >
+            <>
+              <Image
+                src={rightTopArrow}
+                alt="rightTopArrow"
+                className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
+              />
+              <Image
+                src={rightTopArrow}
+                alt="rightTopArrow"
+                className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
+              />
+            </>
+          </Button>
         </div>
         <div className="grid grid-cols-2 gap-8 mt-16 max-md:mt-8">
           {cards.map((card, index) => (

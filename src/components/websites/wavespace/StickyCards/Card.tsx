@@ -45,36 +45,35 @@ const Card = ({
                 textSize="text-[14.5px] max-md:text-[14px]"
                 btnStyle={`${buttonStyle} py-3.5`}
                 hoverColor={hoverColor}
-                children={
-                  buttonStyle === "bg-black text-white" ? (
-                    <>
-                      <Image
-                        src={rightTopArrow}
-                        alt="rightTopArrow"
-                        className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
-                      />
-                      <Image
-                        src={rightTopArrow}
-                        alt="rightTopArrow"
-                        className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
-                      />
-                    </>
-                  ) : (
-                    <>
-                      <Image
-                        src={blackRightTopArrow}
-                        alt="blackRightTopArrow"
-                        className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
-                      />
-                      <Image
-                        src={blackRightTopArrow}
-                        alt="blackRightTopArrow"
-                        className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
-                      />
-                    </>
-                  )
-                }
-              />
+              >
+                buttonStyle === "bg-black text-white" ? (
+                <>
+                  <Image
+                    src={rightTopArrow}
+                    alt="rightTopArrow"
+                    className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
+                  />
+                  <Image
+                    src={rightTopArrow}
+                    alt="rightTopArrow"
+                    className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
+                  />
+                </>
+                ) : (
+                <>
+                  <Image
+                    src={blackRightTopArrow}
+                    alt="blackRightTopArrow"
+                    className="w-3 box-content bg-transparent absolute top-1.5 right-1.5 shrink-0"
+                  />
+                  <Image
+                    src={blackRightTopArrow}
+                    alt="blackRightTopArrow"
+                    className="w-3 box-content bg-transparent absolute bottom-1.5 left-1.5 shrink-0"
+                  />
+                </>
+                )
+              </Button>
             </div>
             <ul className="ml-20 max-lg:ml-5 max-md:hidden">
               {points.map((point, index) => (

@@ -1,6 +1,5 @@
 import HeadingWithButton from "../../HeadingWithButton";
 import graph from "/public/websites/architect/about/graph.svg";
-import { Container } from "../../Container";
 import { Cards } from "./Cards";
 import house from "/public/websites/architect/about/house.png";
 import "./BrandCollaboration.css";
