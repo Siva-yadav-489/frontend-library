@@ -24,6 +24,15 @@ const AnimatedHeading = ({
   const progress = scrollProgress || scrollYProgress;
   const animatedChars = useTransform(progress, [0, 1], [0, text.length]);
 
+  // Create color transforms for each character at the top level
+  const colorTransforms = text
+    .split("")
+    .map((_, index) =>
+      useTransform(animatedChars, (value) =>
+        index < Math.floor(value) ? overlayColor : initialColor
+      )
+    );
+
   return (
     <div ref={containerRef} className="flex items-center h-full">
       <p
@@ -34,9 +43,7 @@ const AnimatedHeading = ({
             key={index}
             className="inline-block"
             style={{
-              color: useTransform(animatedChars, (value) =>
-                index < Math.floor(value) ? overlayColor : initialColor
-              ),
+              color: colorTransforms[index],
             }}
             transition={{ duration: 0.3 }}
           >

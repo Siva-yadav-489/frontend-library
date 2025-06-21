@@ -68,7 +68,6 @@ const HexagonGrid = () => {
   const containerRef = useRef(null);
   // 12 hexagons in total (4 + 4 + 4), but row 2 has 2 half-hexagons
   // We'll treat half-hexagons as individual steps for animation
-  const totalHexes = 4 + 4 + 4; // 12
   // For animation, treat half-hexagons as individual steps
   // Row 1: 4, Row 2: 1 (half) + 3 + 1 (half) = 5, Row 3: 4
   const animHexes = [

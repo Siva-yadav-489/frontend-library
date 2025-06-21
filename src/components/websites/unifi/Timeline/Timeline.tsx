@@ -9,6 +9,7 @@ import SectionTitle from "../SectionTitle";
 import AnimatedHeading from "../AnimatedHeading";
 import BlockPattern from "../BlockPattern";
 import { useScroll, useTransform } from "motion/react";
+import Image from "next/image";
 
 const Timeline = () => {
   const [currentYear, setCurrentYear] = useState(2018);
@@ -88,7 +89,7 @@ const Timeline = () => {
                   }%`,
                 }}
               >
-                <img src={slider.src} alt="slider" className="w-full h-full" />
+                <Image src={slider} alt="slider" className="w-full h-full" />
               </div>
             </div>
           </div>
