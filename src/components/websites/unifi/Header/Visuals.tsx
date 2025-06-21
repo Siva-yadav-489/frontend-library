@@ -32,7 +32,7 @@ const Visuals = () => {
         </div>
         {/* </div> */}
       </div>
-      <div className="flex items-end self-end -mt-[15.5vw] mr-[6.5vw]">
+      <div className="flex items-end self-end -mt-[15.55vw] mr-[6.9vw]">
         <HexagonImage image={tilesHexagon} className="w-[20vw]" />
         <HexagonImage image={videoHexagon} className="w-[20vw]" />
       </div>
