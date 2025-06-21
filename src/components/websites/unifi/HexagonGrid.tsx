@@ -14,12 +14,7 @@ import img12 from "/public/websites/unifi/hexagonGrid/greyHexagon.jpg";
 import img13 from "/public/websites/unifi/hexagonGrid/grassHexagon.jpg";
 import Image from "next/image";
 import { useRef, useState } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useMotionValueEvent,
-} from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const HexagonSVG = ({ className = "" }: { className?: string }) => (
   <svg
