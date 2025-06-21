@@ -7,6 +7,7 @@ export default function Home() {
     { name: "Architect", href: "architect" },
     { name: "Health", href: "health" },
     { name: "WaveSpace", href: "wavespace" },
+    { name: "Unifi", href: "unifi" },
   ];
   return (
     <div className="flex flex-col gap-8 items-center justify-around h-screen">

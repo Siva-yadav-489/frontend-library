@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 388 448" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" fill-rule="evenodd">
+<polygon points="194 0 388 112 388 336 194 448 0 336 0 112" fill-rule="nonzero"/>
+<path id="Combined-Shape" d="m194 111v226l-98-56.5v-113l98-56.5z" fill="#E7E6E4"/>
+<path id="a" d="m388 112.65v223.35l-194 112v-111l98-56.5v-112.5l96-55.346z" fill="#171818" fill-rule="nonzero"/>
+<path d="m194 111 98 56.5-98 56.5-98-56.5 98-56.5z" fill="#38F997" fill-rule="nonzero"/>
+</g>
+</svg>

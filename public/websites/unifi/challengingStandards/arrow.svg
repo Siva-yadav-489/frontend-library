@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg style="content-visibility:visible;height:100%;transform:translate3d(0px, 0px, 0px);width:100%" viewBox="0 0 99 77" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<clipPath id="a">
+<rect width="99" height="77"/>
+</clipPath>
+</defs>
+<g clip-path="url(#a)">
+<g transform="translate(60.5 71.5)" display="block">
+<g>
+<path d="m5.5-5.5v11h-11v-11h11z" fill="#252d29"/>
+</g>
+</g>
+<g transform="translate(60.5 5.5)" display="block">
+<g>
+<path d="m5.5-5.5v11h-11v-11h11z" fill="#252d29"/>
+</g>
+</g>
+<g transform="translate(71.5 60.5)" display="block">
+<g>
+<path d="m5.5-5.5v11h-11v-11h11z" fill="#252d29"/>
+</g>
+</g>
+<g transform="translate(71.5 16.5)" display="block">
+<g>
+<path d="m5.5-5.5v11h-11v-11h11z" fill="#252d29"/>
+</g>
+</g>
+<g transform="translate(82.5 49.5)" display="block">
+<g>
+<path d="m5.5-5.5v11h-11v-11h11z" fill="#252d29"/>
+</g>
+</g>
+<g transform="translate(82.5 27.5)" display="block">
+<g>
+<path d="m5.5-5.5v11h-11v-11h11z" fill="#252d29"/>
+</g>
+</g>
+<g transform="matrix(9 0 0 1 49.5 38.5)" display="block">
+<g>
+<path d="m5.5-5.5v11h-11v-11h11z" fill="#252d29"/>
+</g>
+</g>
+</g>
+</svg>

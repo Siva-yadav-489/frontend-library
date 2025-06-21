@@ -1,0 +1,106 @@
+import SmallContainer from "../SmallContainer";
+import VerticalLines from "../VerticalLines";
+import NavLinkList from "./NavLinkList";
+import SocialLinks from "../SocialLinks";
+import Visuals from "./Visuals";
+
+const Footer = () => {
+  const navLinks = [
+    {
+      category: "ECOSYSTEM",
+      links: [
+        { name: "Ethereum", href: "#" },
+        { name: "Binance", href: "#" },
+        { name: "IoTeX", href: "#" },
+        { name: "Ontology", href: "#" },
+        { name: "Avalanche", href: "#" },
+        { name: "Polygon", href: "#" },
+        { name: "Harmony", href: "#" },
+        { name: "Fantom", href: "#" },
+        { name: "Icon", href: "#" },
+        { name: "Tron", href: "#" },
+        { name: "BitTorrent", href: "#" },
+      ],
+    },
+    {
+      category: "RESOURSES",
+      links: [
+        { name: "Blog", href: "#" },
+        { name: "Help Desk", href: "#" },
+        { name: "Developer Docs", href: "#" },
+        { name: "Brand Assets", href: "#" },
+        { name: "NewsLetter", href: "#" },
+      ],
+    },
+    {
+      category: "TEAM",
+      links: [
+        { name: "About Us", href: "#" },
+        { name: "Careers", href: "#" },
+      ],
+    },
+    {
+      category: "COMMUNITY",
+      links: [
+        { name: "Telegram", href: "#" },
+        { name: "Twitter", href: "#" },
+        { name: "Youtube", href: "#" },
+        { name: "Medium", href: "#" },
+      ],
+    },
+  ];
+  return (
+    <div className="bg-[#272727] relative overflow-hidden">
+      <VerticalLines />
+      <SmallContainer className="pt-36">
+        <div className="flex items-start max-lg:flex-col">
+          <section className="basis-[30%]">
+            <div className="w-36">
+              <svg
+                viewBox="0 0 125 48"
+                xmlns="http://www.w3.org/2000/svg"
+                className="text-white w-full h-full"
+                fill="currentColor"
+              >
+                <path d="m26.172 48h-15.314l-10.857-10.857v-15.314l10.857-10.857h15.314l10.857 10.857v15.314zm-7.7143-4.5714h5.7713l8.2287-8.1714v-11.543l-8.1715-8.2286h-11.543l-8.2286 8.2286v11.543l8.1714 8.1714z" />
+                <path
+                  d="m37.143 37.029h-15.314l-10.857-10.857v-15.314l10.857-10.857h15.314l10.857 10.857v15.314zm-7.6572-4.5715h5.7715l8.1714-8.1714v-11.543l-8.1714-8.2286h-11.543l-8.2285 8.1714v11.543l8.1713 8.1714z"
+                  fill="#38f997"
+                />
+                <g>
+                  <path d="m109.486 22.0043v14.2858h4.228v-14.4h6.572v14.4h4.228v-17.4286h-10.914v-.4572c-.03-.6786.067-1.3569.286-2 .179-.5598.516-1.0558.971-1.4285.53-.4306 1.158-.7249 1.829-.8572.92-.1979 1.859-.2937 2.8-.2857.324.0131.65-.006.971-.0571.286-.0572.457-.1715.457-.4572l.115-2.1714c-.431-.1135-.871-.19-1.315-.2286-.493-.0465-.989-.0656-1.485-.0571-1.319-.0365-2.634.1569-3.886.5714-1.012.3466-1.944.8905-2.743 1.6-.699.6765-1.245 1.4949-1.6 2.4-.351.9509-.525 1.9579-.514 2.9714v.5715h-2.629v1.7143c-.019.1378-.004.2785.046.4085s.133.2451.24.3343c.232.1812.508.2993.8.3429z" />
+                  <path d="m104.571 13.7185c.007.3562-.072.7088-.228 1.0286-.157.3067-.349.5943-.572.8571-.238.2533-.532.4487-.857.5715-.347.1361-.713.2134-1.085.2285-.707-.0187-1.379-.3077-1.8787-.8073-.5-.4997-.7886-1.172-.8074-1.8784-.0126-.375.0657-.7476.2285-1.0857.132-.3206.3263-.6118.5715-.857.2451-.2452.5361-.4394.8571-.5716.329-.1301.676-.2073 1.029-.2285.374-.0128.747.0657 1.085.2285.315.143.604.336.857.5715.254.2385.449.5316.572.8571.163.3381.241.7107.228 1.0857z" />
+                  <path d="m103.94 18.804v17.6h-4.2287v-17.6z" />
+                  <path d="m79.9429 18.8043v17.7143h4.3428v-12.7429c.5412-.5417 1.1572-1.0035 1.8286-1.3714.6308-.3434 1.3388-.5203 2.0571-.5143.4115-.0263.8235.0367 1.208.1847.3846.1479.7326.3773 1.0206.6725.54.7223.804 1.6143.7429 2.5143v11.2h4.2285v-11.2c.02-.9115-.1154-1.8197-.4-2.6858-.2417-.7717-.6297-1.4895-1.1428-2.1142-.5275-.5819-1.1697-1.0488-1.8857-1.3715-.8098-.3565-1.6869-.5321-2.5715-.5143-.5571-.0055-1.1131.052-1.6571.1715-.496.1111-.976.2838-1.4286.5143-.4497.1917-.8726.4414-1.2571.7428-.4063.2926-.7886.6175-1.1429.9714l-.2857-1.3714c-.0583-.2394-.1994-.4507-.3977-.597-.1983-.1462-.4423-.218-.688-.203z" />
+                  <path d="m64.3429 30.0044v-11.2572h-4.3429v11.2c.008.9094.1429 1.8134.4 2.6857.2411.7717.6297 1.4896 1.1429 2.1143.5274.5819 1.1697 1.0488 1.8857 1.3714.8097.3567 1.6868.5322 2.5714.5143.5571.0056 1.1131-.0519 1.6571-.1714.496-.111.976-.2838 1.4286-.5143.4497-.1916.8726-.4414 1.2572-.7428.4-.3429.8-.6858 1.1428-1.0286l.2857 1.4286c.072.2272.2183.4237.4149.5583.1971.1346.4331.1995.6708.1845h2.5715v-17.6h-4.2286v12.7429c-.5411.5417-1.1571 1.0036-1.8286 1.3714-.6308.3434-1.3388.5203-2.0571.5143-.4114.0263-.8234-.0366-1.208-.1846s-.7332-.3774-1.0206-.6726c-.5406-.7222-.804-1.6142-.7428-2.5142z" />
+                </g>
+              </svg>
+            </div>
+          </section>
+          <section className="flex max-sm:flex-wrap lg:ml-24 max-lg:mt-10 max-lg:justify-between max-lg:w-full lg:space-x-[9vw] items-start lg:basis-[70%]">
+            {navLinks.map((list, index) => (
+              <NavLinkList
+                key={index}
+                category={list.category}
+                links={list.links}
+              />
+            ))}
+          </section>
+        </div>
+      </SmallContainer>
+      <div className="flex flex-col">
+        <Visuals />
+      </div>
+      <div className="bg-black">
+        <div className="flex justify-between max-xs:justify-end items-center max-md:w-2/3 w-1/2 ml-auto pl-2 md:pr-24">
+          <p className="text-base text-nowrap max-md:text-sm max-sm:text-xs text-white max-xs:hidden font-medium">
+            © 2022 All rights reserved.
+          </p>
+          <SocialLinks size="w-6 max-sm:w-4 hover:bg-[#38f997] hover:text-[#272727] text-white" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
