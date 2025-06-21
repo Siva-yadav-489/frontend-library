@@ -1,5 +1,5 @@
 "use client";
-import noiseBackground from "/public/websites/unifi/WeAreOnline/noise-background.jpg";
+import noiseBackground from "/websites/unifi/WeAreOnline/noise-background.jpg";
 import SectionTitle from "./SectionTitle";
 import VerticalLines from "./VerticalLines";
 import SocialLinks from "./SocialLinks";
