@@ -1,5 +1,5 @@
 "use client";
-import noiseBackground from "/websites/unifi/WeAreOnline/noise-background.jpg";
+import noiseBackground from "/public/websites/unifi/WeAreOnline/noise-background.jpg";
 import SectionTitle from "./SectionTitle";
 import VerticalLines from "./VerticalLines";
 import SocialLinks from "./SocialLinks";
@@ -23,7 +23,7 @@ const WeAreOnline = () => {
       <VerticalLines />
       <motion.div
         style={{
-          backgroundImage: `url(${noiseBackground})`,
+          backgroundImage: `url(${noiseBackground.src})`,
           scale: backgroundScale,
         }}
         className="bg-cover w-[55rem] h-[55rem] max-lg:w-[85vw] max-lg:h-[85vw] max-xs:scale-125 mx-auto rounded-full flex flex-col justify-center items-center z-10"

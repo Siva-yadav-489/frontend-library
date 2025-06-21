@@ -2,7 +2,7 @@ import React from "react";
 
 const VerticalLines = ({ lineCount = 5 }: { lineCount?: number }) => {
   return (
-    <div className="flex justify-evenly w-full h-full absolute inset-0 bg-transparent">
+    <div className="flex justify-evenly w-full h-full absolute inset-0 bg-transparent pointer-events-none">
       {Array.from({ length: lineCount }).map((_, index) => (
         <div key={index} className="w-px h-full bg-[#97979739] relative"></div>
       ))}
