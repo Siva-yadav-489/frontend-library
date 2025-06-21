@@ -23,7 +23,7 @@ const WeAreOnline = () => {
       <VerticalLines />
       <motion.div
         style={{
-          backgroundImage: `url(${noiseBackground.src})`,
+          backgroundImage: `url(${noiseBackground})`,
           scale: backgroundScale,
         }}
         className="bg-cover w-[55rem] h-[55rem] max-lg:w-[85vw] max-lg:h-[85vw] max-xs:scale-125 mx-auto rounded-full flex flex-col justify-center items-center z-10"
