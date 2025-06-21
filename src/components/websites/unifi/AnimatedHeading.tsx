@@ -1,6 +1,12 @@
 "use client";
-import { useRef } from "react";
-import { motion, useScroll, useTransform, MotionValue } from "motion/react";
+import { useRef, useState } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  MotionValue,
+  useMotionValueEvent,
+} from "motion/react";
 
 const AnimatedHeading = ({
   text,
@@ -24,14 +30,9 @@ const AnimatedHeading = ({
   const progress = scrollProgress || scrollYProgress;
   const animatedChars = useTransform(progress, [0, 1], [0, text.length]);
 
-  // Create color transforms for each character at the top level
-  const colorTransforms = text
-    .split("")
-    .map((_, index) =>
-      useTransform(animatedChars, (value) =>
-        index < Math.floor(value) ? overlayColor : initialColor
-      )
-    );
+  // Track the current value of animatedChars
+  const [current, setCurrent] = useState(0);
+  useMotionValueEvent(animatedChars, "change", (v) => setCurrent(v));
 
   return (
     <div ref={containerRef} className="flex items-center h-full">
@@ -43,7 +44,7 @@ const AnimatedHeading = ({
             key={index}
             className="inline-block"
             style={{
-              color: colorTransforms[index],
+              color: index < Math.floor(current) ? overlayColor : initialColor,
             }}
             transition={{ duration: 0.3 }}
           >

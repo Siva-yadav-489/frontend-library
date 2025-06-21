@@ -13,8 +13,13 @@ import img11 from "/public/websites/unifi/hexagonGrid/grassHexagon.jpg";
 import img12 from "/public/websites/unifi/hexagonGrid/greyHexagon.jpg";
 import img13 from "/public/websites/unifi/hexagonGrid/grassHexagon.jpg";
 import Image from "next/image";
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef, useState } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+} from "framer-motion";
 
 const HexagonSVG = ({ className = "" }: { className?: string }) => (
   <svg
@@ -89,13 +94,19 @@ const HexagonGrid = () => {
     target: containerRef,
     offset: ["start start", "end end"],
   });
-  const opacities = animHexes.map((_, i) =>
-    useTransform(
-      scrollYProgress,
-      [i / animHexes.length, (i + 0.5) / animHexes.length],
-      [0, 1]
-    )
-  );
+
+  // Track the current value of scrollYProgress
+  const [progress, setProgress] = useState(0);
+  useMotionValueEvent(scrollYProgress, "change", (v) => setProgress(v));
+
+  // Helper to calculate opacity for each hexagon
+  const getOpacity = (i: number) => {
+    const start = i / animHexes.length;
+    const end = (i + 0.5) / animHexes.length;
+    if (progress <= start) return 0;
+    if (progress >= end) return 1;
+    return (progress - start) / (end - start);
+  };
 
   return (
     <div className="relative w-full bg-[#272727] py-[12vw]">
@@ -109,7 +120,7 @@ const HexagonGrid = () => {
                   <div className="relative w-full h-full">
                     <HexagonSVG />
                     <motion.div
-                      style={{ opacity: opacities[i] }}
+                      style={{ opacity: getOpacity(i) }}
                       className="w-full h-full"
                     >
                       <Image
@@ -133,7 +144,7 @@ const HexagonGrid = () => {
                 <div className="w-[25vw] h-full -translate-x-1/2">
                   <HalfHexagonSVGRight />
                   <motion.div
-                    style={{ opacity: opacities[4] }}
+                    style={{ opacity: getOpacity(4) }}
                     className="w-full h-full"
                   >
                     <Image
@@ -154,7 +165,7 @@ const HexagonGrid = () => {
                   <div className="relative w-full h-full">
                     <HexagonSVG />
                     <motion.div
-                      style={{ opacity: opacities[i + 5] }}
+                      style={{ opacity: getOpacity(i + 5) }}
                       className="w-full h-full"
                     >
                       <Image
@@ -175,7 +186,7 @@ const HexagonGrid = () => {
                 <div className="w-[25vw] h-full">
                   <HalfHexagonSVGLeft className="rotate-180" />
                   <motion.div
-                    style={{ opacity: opacities[8] }}
+                    style={{ opacity: getOpacity(8) }}
                     className="w-full h-full"
                   >
                     <Image
@@ -198,7 +209,7 @@ const HexagonGrid = () => {
                   <div className="relative w-full h-full">
                     <HexagonSVG />
                     <motion.div
-                      style={{ opacity: opacities[i + 9] }}
+                      style={{ opacity: getOpacity(i + 9) }}
                       className="w-full h-full"
                     >
                       <Image
