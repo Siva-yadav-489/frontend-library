@@ -82,7 +82,7 @@ const Carousel = () => {
       <LargeContainer className="relative mt-11">
         <div className="relative w-full overflow-hidden">
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex transition-transform duration-500 ease-in-out relative"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {carouselCards.map((carousel, index) => (
@@ -107,7 +107,7 @@ const Carousel = () => {
               />
             ))}
           </div>
-          <div className="flex lg:flex-col absolute top-0 right-0 h-full z-10">
+          <div className="flex lg:flex-col absolute top-0 right-0 h-fit z-10">
             <motion.button
               onClick={handlePrevious}
               className="h-[13vw] w-[16vw] flex overflow-hidden max-lg:h-[10vw] max-lg:w-[13vw] p-[3.5vw] max-lg:p-[3vw] bg-white transition-colors cursor-pointer"
