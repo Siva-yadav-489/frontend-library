@@ -1,4 +1,6 @@
 import * as motion from "motion/react-client";
+import eyes from "/public/eyes_emoji.png";
+import Image from "next/image";
 export default function Home() {
   const websites = [
     { name: "Dripify", href: "dripify" },
@@ -27,6 +29,22 @@ export default function Home() {
             {char === " " ? "\u00A0" : char}
           </motion.span>
         ))}
+      </motion.p>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="text-lg flex items-center text-neutral-400"
+      >
+        Meanwhile take a peek into it{" "}
+        <motion.span
+          initial={{ height: 0, opacity: 0 }}
+          animate={{ height: 20, opacity: 1 }}
+          transition={{ repeat: Infinity, repeatDelay: 2.5 }}
+          className="inline-block w-5 h-5 mx-1"
+        >
+          <Image src={eyes} alt="eyes-emoji" className="w-full h-full" />
+        </motion.span>
       </motion.p>
       <div className="flex gap-4 items-center justify-center flex-col sm:flex-row w-full flex-wrap">
         {websites.map((website, index) => (
