@@ -1,19 +1,27 @@
 import * as motion from "motion/react-client";
 import eyes from "/public/eyes_emoji.png";
 import Image from "next/image";
+import dripify from "/public/dripify.png";
+import apple from "/public/apple.png";
+import cogni from "/public/cogni.png";
+import architect from "/public/architect.png";
+import health from "/public/health.png";
+import wavespace from "/public/wavespace.png";
+import unifi from "/public/unifi.png";
+
 export default function Home() {
   const websites = [
-    { name: "Dripify", href: "dripify" },
-    { name: "Apple Store", href: "applestore" },
-    { name: "CogniAI", href: "cogniai" },
-    { name: "Architect", href: "architect" },
-    { name: "Health", href: "health" },
-    { name: "WaveSpace", href: "wavespace" },
-    { name: "Unifi", href: "unifi" },
+    { name: "Dripify", href: "dripify", image: dripify },
+    { name: "Apple Store", href: "applestore", image: apple },
+    { name: "CogniAI", href: "cogniai", image: cogni },
+    { name: "Architect", href: "architect", image: architect },
+    { name: "Health", href: "health", image: health },
+    { name: "WaveSpace", href: "wavespace", image: wavespace },
+    { name: "Unifi", href: "unifi", image: unifi },
   ];
   return (
-    <div className="flex flex-col gap-8 items-center justify-around h-screen">
-      <motion.p className="text-3xl text-white text-nowrap text-center">
+    <div className="flex flex-col font-mono items-center justify-center min-h-screen">
+      {/*   <motion.p className="text-3xl text-white text-nowrap text-center">
         {"Work in progress...".split("").map((char, index) => (
           <motion.span
             key={index}
@@ -45,32 +53,49 @@ export default function Home() {
         >
           <Image src={eyes} alt="eyes-emoji" className="w-full h-full" />
         </motion.span>
-      </motion.p>
-      <div className="flex gap-4 items-center justify-center flex-col sm:flex-row w-full flex-wrap">
-        {websites.map((website, index) => (
+      </motion.p> */}
+      <h1 className="font-bold text-3xl pt-28">Frontend Showcases</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 pt-14 pb-28 max-w-3xl mx-auto max-md:mx-5 gap-5 place-content-center place-items-center">
+        {websites.reverse().map((website, index) => (
           <motion.a
             key={index}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: index * 0.2 }}
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+            className="rounded-md border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium h-full px-5 w-full"
             href={`/websites/${website.href}`}
           >
-            {website.name.split("").map((char, charIndex) => (
-              <motion.span
-                key={charIndex}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.2,
-                  delay: index * 0.2 + charIndex * 0.05,
-                  ease: "easeOut",
-                }}
-                className="inline-block"
-              >
-                {char}
-              </motion.span>
-            ))}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.3,
+                ease: "linear",
+              }}
+            >
+              <Image
+                src={website.image}
+                alt="image"
+                className="w-96 h-48 mt-3"
+              />
+              <p className="my-3">
+                {website.name.split("").map((char, charIndex) => (
+                  <motion.span
+                    key={charIndex}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.2,
+                      delay: index * 0.2 + charIndex * 0.05,
+                      ease: "easeOut",
+                    }}
+                    className="inline-block"
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </p>
+            </motion.div>
           </motion.a>
         ))}
       </div>
