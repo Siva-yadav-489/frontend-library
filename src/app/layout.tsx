@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My frontend library",
-  description: "website templates",
+  title: "Frontend Showcases",
+  description: "Frontend Showcases",
 };
 
 export default function RootLayout({
