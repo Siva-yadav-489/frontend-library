@@ -1,5 +1,5 @@
 import * as motion from "motion/react-client";
-import eyes from "/public/eyes_emoji.png";
+// import eyes from "/public/eyes_emoji.png";
 import Image from "next/image";
 import dripify from "/public/dripify.png";
 import apple from "/public/apple.png";
