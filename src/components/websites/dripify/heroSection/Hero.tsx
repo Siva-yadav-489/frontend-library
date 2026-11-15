@@ -126,7 +126,7 @@ const Hero = () => {
           autoPlay
           loop
           muted
-          src="https://dripify.io/wp-content/uploads/2023/12/Automate-LinkedIn-compreessed.mp4"
+          src="https://dripify.com/wp-content/uploads/2026/06/Automate-LinkedIn-compressed.webm"
           playsInline
           preload="metadata"
           className="rounded-xl lg:w-4xl max-md:w-11/12 w-4/5 shadow-xl mb-10"
